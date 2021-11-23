@@ -25,18 +25,16 @@
         element.className = 'heading-1'
         root.appendChild(element)
         **/
-        const root = document.querySelector('#root');
-
-        const p1 = React.createElement('p', {
-            children: 'Hello Paragraf 1'
+        const li1 = React.createElement('li', {
+            children: 'Apple',
         });
-        const p2 = React.createElement('p', {
-            children: 'Hello Paragraf 2'
+        const li2 = React.createElement('li', {
+            children: 'Pinaple',
         });
-        const element = React.createElement(React.Fragment, {
-            children: [p1, p2]
+        const li3 = React.createElement('li', {
+            children: 'Grape',
         });
-        console.log(element)
+        const element = React.createElement('ul', {className: 'list'}, 'Hello content in list')
         ReactDOM.render(element, root)
     </script>
 
