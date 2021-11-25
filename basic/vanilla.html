@@ -15,42 +15,16 @@
     </div>
  
     <script type="text/babel">
-        /**
-         * vanilla javascript
+
+
+   
         const root = document.querySelector('#root');
 
-        const element = document.createElement('h1');
-        console.log(element);
-
-        element.textContent = 'Help From JS';
-        element.className = 'heading-1'
-        root.appendChild(element)
-        **/
-       /**
-        const li1 = React.createElement('li', {
-            children: 'Apple',
-        });
-        const li2 = React.createElement('li', {
-            children: 'Pinaple',
-        });
-        const li3 = React.createElement('li', {
-            children: 'Grape',
-        });
-         **/
-        // const element = React.createElement('ul', {className: 'list'}, 
-        //     React.createElement('li', null,  'Apple'),
-        //     React.createElement('li', null,  'Orange'),
-        //     React.createElement('li', null,  'Mangoes'),
-
-        // );
-        const root = document.querySelector('#root');
-        const element = (
-            <ul>
-                <li>Apple</li>
-                <li>Apple</li>
-                <li>Apple</li>
-            </ul>
-        );
+        function UpperFont(text) {
+            return text.toUpperCase();
+        }
+        const name = 'Sandy'
+        const element = <h1> Hello name {UpperFont(name)} - {new Date().toLocaleDateString()}</h1>
         ReactDOM.render(element, root)
     </script>
 
